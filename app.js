@@ -18,8 +18,8 @@ document.querySelector('.check').addEventListener('click', () => {
     document.querySelector('.number').textContent = answer;
     displayMessage('Correct Number');
     document.querySelector('body').style.backgroundColor = 'green';
-
     highest = currentScore > highest ? currentScore : highest;
+    
   } else if (guess !== answer) {
     if (currentScore > 1) {
       displayMessage(guess > answer ? '👇 too high' : '☝🏻 too low');

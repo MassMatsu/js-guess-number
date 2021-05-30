@@ -110,6 +110,10 @@ h1 {
   /* body {
     padding: 2rem;
   } */
+  html {
+  font-size: 50.5%;
+  box-sizing: border-box;
+}
   header {
     height: 40vh;
   }
@@ -148,4 +152,13 @@ h1 {
     font-size: 3rem;
     padding: 1rem;
   }
+  .btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
 }
