@@ -111,7 +111,7 @@ h1 {
     padding: 2rem;
   } */
   html {
-  font-size: 50.5%;
+  font-size: 45%;
   box-sizing: border-box;
 }
   header {
@@ -152,6 +152,10 @@ h1 {
     font-size: 3rem;
     padding: 1rem;
   }
+  .guess {
+  font-size: 3rem;
+  padding: 1.5rem;
+}
   .btn {
   border: none;
   background-color: #eee;
