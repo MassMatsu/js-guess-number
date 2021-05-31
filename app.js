@@ -8,7 +8,7 @@ let guess = 10;
 console.log('guess', guess)
 
 // set values and display
-initializeValues(currentScore, highest, answer)
+initializeValues(currentScore, highest)
 
 //console.log(document.querySelector('.guess').value)
 
@@ -42,7 +42,7 @@ document.querySelector('.again').addEventListener('click', () => {
   currentScore = 20;
   guess = 10
   
-  initializeValues(currentScore, highest, answer)
+  initializeValues(currentScore, highest)
 
 });
 

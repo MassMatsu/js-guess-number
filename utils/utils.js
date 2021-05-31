@@ -8,8 +8,8 @@ function displayMessage(message) {
   document.querySelector('.message').textContent = message;
 }
 
-function initializeValues(currentScore,  highest, answer) {
-  document.querySelector('.number').textContent = answer;
+function initializeValues(currentScore,  highest) {
+  document.querySelector('.number').textContent = '?';
   document.querySelector('.score').textContent = currentScore;
   document.querySelector('.highscore').textContent = highest;
   document.querySelector('.guess').value = 10;

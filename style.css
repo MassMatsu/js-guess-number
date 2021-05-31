@@ -172,14 +172,19 @@ h1 {
   display: flex;
 }
 .plusBtn {
+  border: none;
+  background-color: #eee;
   display: block;
   padding: .5rem;
-  width: 7rem
+  width: 7rem;
+  margin-bottom: .5rem 
 }
 .plusBtn:hover {
   background-color: orange
 }
 .minusBtn {
+  border: none;
+  background-color: #eee;
   display: block;
   padding: .5rem;
   width: 7rem;
@@ -188,7 +193,9 @@ h1 {
 background-color: orange
 }
 .control-btns {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
   margin-left: 1rem;
 }
 }
