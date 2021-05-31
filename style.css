@@ -105,6 +105,9 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+.control-btn {
+  display: none;
+}
 
 @media screen and (max-width: 992px) {
   /* body {
@@ -164,5 +167,28 @@ h1 {
   font-family: inherit;
   padding: 1rem 2rem;
   cursor: pointer;
+}
+.input-control {
+  display: flex;
+}
+.plusBtn {
+  display: block;
+  padding: .5rem;
+  width: 7rem
+}
+.plusBtn:hover {
+  background-color: orange
+}
+.minusBtn {
+  display: block;
+  padding: .5rem;
+  width: 7rem;
+}
+.minusBtn:hover {
+background-color: orange
+}
+.control-btns {
+  display: block;
+  margin-left: 1rem;
 }
 }

@@ -2,15 +2,19 @@ import {getRandomNum, displayMessage, initializeValues } from './utils/utils.js'
 
 // state values
 let answer = getRandomNum();
-export let currentScore = 20;
-export let highest = 0;
+let currentScore = 20;
+let highest = 0;
+let guess = 10;
+console.log('guess', guess)
 
 // set values and display
-initializeValues(currentScore, highest)
+initializeValues(currentScore, highest, answer)
+
+//console.log(document.querySelector('.guess').value)
 
 // when click check button
 document.querySelector('.check').addEventListener('click', () => {
-  const guess = parseInt(document.querySelector('.guess').value);
+  guess = parseInt(document.querySelector('.guess').value);
 
   if (!guess) {
     displayMessage('🚫invalid entry');
@@ -19,7 +23,7 @@ document.querySelector('.check').addEventListener('click', () => {
     displayMessage('Correct Number');
     document.querySelector('body').style.backgroundColor = 'green';
     highest = currentScore > highest ? currentScore : highest;
-    
+
   } else if (guess !== answer) {
     if (currentScore > 1) {
       displayMessage(guess > answer ? '👇 too high' : '☝🏻 too low');
@@ -36,6 +40,18 @@ document.querySelector('.check').addEventListener('click', () => {
 document.querySelector('.again').addEventListener('click', () => {
   answer = getRandomNum();
   currentScore = 20;
+  guess = 10
+  
+  initializeValues(currentScore, highest, answer)
 
-  initializeValues(currentScore, highest)
 });
+
+// click to increase or decrease guess number (it is for mobile phone)
+document.querySelector('.plusBtn').addEventListener('click', () => {
+  guess ++
+  document.querySelector('.guess').value = guess
+})
+document.querySelector('.minusBtn').addEventListener('click', () => {
+  guess --
+  document.querySelector('.guess').value = guess
+})
